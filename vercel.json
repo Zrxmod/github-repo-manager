@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "public": false,
+  "buildCommand": "npm install",
+  "outputDirectory": "public",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
